@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SingIn from "./Components/SingIn";
 import SingUp from "./Components/SingUp";
+import ProfileScreen from "./Components/ProfileScreen"
 
 const Stack = createStackNavigator();
 
@@ -15,7 +16,7 @@ const App = () => {
           component={SingIn}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="singUp" component={SingUp} />
+        <Stack.Screen name="singUp" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
